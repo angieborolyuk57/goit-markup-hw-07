@@ -51,15 +51,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
 
-.auth-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
 }
-
+  
 .email,
 .tel-header {
   font-weight: 500;
