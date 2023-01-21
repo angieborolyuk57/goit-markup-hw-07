@@ -59,7 +59,7 @@
     &__burger{
       display:none;
       
-      @media (max-width:768px){
+      @media (min-width:480px){
         display:block;
         
       }
@@ -67,14 +67,14 @@
 
     &__site-nav{
       
-      @media (max-width:768px){
+      @media (min-width:480px){
         display:none;
         
       }
     }
 }
 
-@media (max-width:768px){
+@media (min-width:480px){
   .auth-nav {
     display:none;
   }

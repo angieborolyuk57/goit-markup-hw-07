@@ -3,7 +3,7 @@
 .feature {
     padding-top:94px;
 
-    @media (max-width:768px){
+    @media (min-width:480px){
       width:480px;
       padding:60px 15px;
     }
@@ -11,7 +11,7 @@
     &__list{
       display:flex;
 
-      @media (max-width:768px){
+      @media (min-width:480px){
        display:block;
       }
     }
@@ -19,7 +19,7 @@
     &__item {
       width:270px;
 
-      @media (max-width:768px){
+      @media (min-width:480px){
         width:100%;
        }
 
@@ -37,7 +37,7 @@
     margin-bottom:10px;
     color: var(--headline-color);
 
-    @media (max-width:768px){
+    @media (min-width:480px){
       text-align: center;
      }
   }
@@ -65,7 +65,7 @@
     text-align: center;
      margin-bottom:30px;
 
-     @media (max-width:768px){
+     @media (min-width:480px){
       width:450px;
      }
 

@@ -9,7 +9,7 @@
     margin-left:32px;
     margin-right:32px;
 
-    @media (max-width:768px){
+    @media (min-width:480px){
       margin-left:122px;
       margin-right:134px;
     }
@@ -23,6 +23,12 @@
     &__icon{
       display:inline-block;
       object-fit: cover;
+    }
+
+    &__list{
+     @media (min-width:480px){
+      text-align: center;
+     }
     }
     
     &__link{
