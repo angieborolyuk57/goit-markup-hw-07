@@ -1,5 +1,6 @@
+.header{
 
-.site-nav__header {
+  &__site-nav {
     display:flex;
     margin-left:93px;
     
@@ -7,18 +8,21 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
   }
 
-  .main-nav__header {
+
+  &__main-nav{
     display: flex;
     align-items:center;
+
   }
 
-  .site-nav__header .header__page + .header__page{
+  &__site-nav &__page + &__page{
     margin-left:50px;
   }
 
-  .header__link{
+  &__link{
     display:block;
     padding-top:8px;
     padding-bottom:8px;
@@ -31,77 +35,52 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .header__link:hover,
-  .header__link:focus {
+  &__link:hover,
+  &__link:focus {
   color: var(--accent-color);
   }
 
-.site-nav__header .header__page{
-  position:relative;
-  padding:28px 0px;
-}
-
-  .header__page .header__link--current::after{
-    display:block;
-    position:absolute;
-    bottom:0px;
-    left:0px;
-    width:100%;
-    height:3px;
-    background-color:var(--accent-color);
-    content:'';
-  }
-
-
-.site-nav__header {
-    display:flex;
-    margin-left:93px;
-    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-
-  .main-nav__header {
-    display: flex;
-    align-items:center;
-  }
-
-  .site-nav__header .header__page + .header__page{
-    margin-left:50px;
-  }
-
-  .header__link{
-    display:block;
-    padding-top:8px;
-    padding-bottom:8px;
-  
-    text-decoration:none;
-    color:var(--headline-color);
-
-    transition-property: color;
-    transition-duration:250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__site-nav &__page{
+    position:relative;
+    padding:28px 0px;
   }
   
-  .header__link:hover,
-  .header__link:focus {
-  color: var(--accent-color);
-  }
+    &__page &__link--current::after{
+      display:block;
+      position:absolute;
+      bottom:0px;
+      left:0px;
+      width:100%;
+      height:3px;
+      background-color:var(--accent-color);
+      content:'';
+    }
 
-.site-nav__header .header__page{
-  position:relative;
-  padding:28px 0px;
+    &__burger{
+      display:none;
+      
+      @media (max-width:768px){
+        display:block;
+        
+      }
+    }
+
+    &__site-nav{
+      
+      @media (max-width:768px){
+        display:none;
+        
+      }
+    }
 }
 
-  .header__page .header__link--current::after{
-    display:block;
-    position:absolute;
-    bottom:0px;
-    left:0px;
-    width:100%;
-    height:3px;
-    background-color:var(--accent-color);
-    content:'';
+@media (max-width:768px){
+  .auth-nav {
+    display:none;
   }
+}
+
+
+  
+
+

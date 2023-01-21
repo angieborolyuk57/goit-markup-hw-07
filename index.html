@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="uk">Студія</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -13,14 +13,19 @@
 <body> 
     <!--Page navigation-->
    <header class="header"> 
-       <div class="container main-nav__header"> 
-         <nav class="main-nav__header">   
-            <a class="logo logo__header" href="./index.html"> <span class="web">Web</span><span class="studio">Studio</span> </a>
-              <ul class="site-nav__header list"> 
+       <div class="container header__main-nav"> 
+         <nav class="header__main-nav">   
+            <a class="logo header__logo" href="./index.html"> <span class="web">Web</span><span class="studio">Studio</span> </a>
+              <ul class="header__site-nav list"> 
                  <li class="header__page"> <a class="header__link header__link--current" href="./index.html">Студія</a></li>
                  <li class="header__page"> <a class="header__link" href="../goit-markup-hw-02/index.html">Портфоліо</a></li>
                <li class="header__page"> <a class="header__link" href="#contact">Контакти</a></li>
             </ul>
+            <button class="header__burger" type="button">
+              <svg width="40" height="40"> 
+                <use href="./images/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
        </nav>
       <div class="auth-nav"> 
                   <a class="auth-item" href="mailto:info@devstudio.com">
@@ -117,7 +122,7 @@
             <h2 class="section-title">Наша команда</h2>
         <ul class="list team-members__catalog"> 
           <li class="team-members__list">   
-            <img src="./images/img.jpg" alt="Дизайнер" width="270">                
+            <img class="mobile-image" src="./images/img.jpg" alt="Дизайнер" width="270">                
                    <div class="team-members__description">
                     <h3 class="team-members__title">Ігор Дем'яненко</h3> 
                    <p class="team-members__position">Product Designer</p>
@@ -154,7 +159,7 @@
                   </div>
             </li>
             <li class="team-members__list">     
-              <img src="./images/img2.jpg" alt="Фронтенд Розробник" width="270">                 
+              <img class="mobile-image" src="./images/img2.jpg" alt="Фронтенд Розробник" width="270">                 
               <div class="team-members__description">
                  <h3 class="team-members__title">Ольга Рєпіна</h3>
                 <p class="team-members__position">Frontend Developer</p>
@@ -191,7 +196,7 @@
               </div>
                 </li>
                 <li class="team-members__list"> 
-                  <img src="./images/img-3.jpg" alt="Маркетинг" width="270">
+                  <img class="mobile-image" src="./images/img-3.jpg" alt="Маркетинг" width="270">
                   <div class="team-members__description">               
                     <h3 class="team-members__title">Микола Тарасов</h3>
                     <p class="team-members__position">Marketing</p> 
@@ -228,7 +233,7 @@
                   </div>
                </li>
              <li class="team-members__list">
-                    <img src="./images/img-4.jpg" alt="Дизайнер інтерфейсу" width="270" > 
+                    <img class="mobile-image" src="./images/img-4.jpg" alt="Дизайнер інтерфейсу" width="270" > 
                     <div class="team-members__description"> 
                     <h3 class="team-members__title">Михайло Єрмаков</h3> 
                     <p class="team-members__position">UI Designer</p>

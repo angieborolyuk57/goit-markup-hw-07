@@ -8,6 +8,11 @@
   
     margin-left:32px;
     margin-right:32px;
+
+    @media (max-width:768px){
+      margin-left:122px;
+      margin-right:134px;
+    }
   
     &__item{
       width: 44px;
