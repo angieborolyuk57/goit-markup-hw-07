@@ -3,7 +3,9 @@
   .team-members {
     @media (max-width:768px){
       width:480px;
-      padding: 0;
+      padding-left:15px;
+      padding-right:15px;
+      background-color: #F5F4FA;
     }
   
     .team-members__catalog{

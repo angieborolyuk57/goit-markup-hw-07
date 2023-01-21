@@ -1,10 +1,21 @@
  /* Our clients section design */
  .clients{
 
+  @media (max-width:768px){
+    width:480px;
+    padding-left:15px;
+    padding-right:15px;
+  }
+
     &__list{
       display:flex;
       align-items: center;
       gap:30px;
+
+      @media (max-width:768px){
+        display:flex;
+        flex-wrap: wrap;
+      }
     }
     
     &__link{
@@ -21,6 +32,12 @@
     transition-property: fill;
       transition-duration:250ms;
       transition-timing-function:var(--timing-function);
+
+      @media (max-width:768px){
+        width:210px;
+      }
+
+
     }
     
     &__link:hover,

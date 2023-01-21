@@ -4,8 +4,8 @@
     padding-top:94px;
 
     @media (max-width:768px){
-      padding-top:60px;
-      padding-bottom:60px;
+      width:480px;
+      padding:60px 15px;
     }
 
     &__list{
@@ -36,6 +36,10 @@
   margin-top: 0px;
     margin-bottom:10px;
     color: var(--headline-color);
+
+    @media (max-width:768px){
+      text-align: center;
+     }
   }
     
   &__text {
@@ -63,7 +67,6 @@
 
      @media (max-width:768px){
       width:450px;
-      height:120px;
      }
 
   }

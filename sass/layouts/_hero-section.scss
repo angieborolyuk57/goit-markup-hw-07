@@ -11,6 +11,12 @@
     text-align: center;
     justify-content: center;
 
+    @media (max-width:768px){
+      padding:118px 60px;
+      width:480px;
+      align-content:center;
+    }
+
     &__overlay{
       max-width:1600px;
       margin-left:auto;
@@ -24,6 +30,11 @@
       
         background-repeat:no-repeat;
         background-size: cover;
+
+        @media (max-width:768px){
+          width:480px;
+          height:400px;
+        }
         }
       
       &__title {
@@ -40,5 +51,15 @@
       text-transform: uppercase;
       
       color: var(--primary-white);
+
+      @media (max-width:768px){
+        width:480px;
+        font-size: 26px;
+         line-height: 1.62;
+      }
       }
     }
+
+
+
+    
