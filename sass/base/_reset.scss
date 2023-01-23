@@ -24,30 +24,35 @@ html{
       
       .section:nth-child(4){
         background-color:#F5F4FA;
-
       }
 
       .section{
-        padding-top:94px;
-        padding-bottom:94px;
-        
-        @media (min-width:480px){
-          padding-top:60px;
-          padding-bottom:60px;
+        padding-top:60px;
+        padding-bottom:60px;
+
+    @media (min-width:1200px){
+      padding-top:94px;
+      padding-bottom:94px;
+    }
         }
-      }
+      
 
       .section-title{
-        font-size: 36px;
-        line-height:1.16;
+        margin-bottom:30px;
+
+        font-size: 28px;
+        line-height: 1.17;
         text-align: center;
         color: var(--headline-color);
-        
-        margin-top:0px;
-        margin-bottom:50px;
 
-        @media(min-width:480px){
-          margin-bottom:30px;
+        @media(min-width:1200px){
+          font-size: 36px;
+          line-height:1.16;
+          text-align: center;
+          color: var(--headline-color);
+          
+          margin-top:0px;
+          margin-bottom:50px;
         }
         }
         

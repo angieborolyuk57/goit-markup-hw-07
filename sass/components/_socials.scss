@@ -6,12 +6,17 @@
     align-items: center;
     gap:10px;
   
-    margin-left:32px;
-    margin-right:32px;
+    margin-left:122px;
+    margin-right:122px;
 
-    @media (min-width:480px){
-      margin-left:122px;
-      margin-right:134px;
+    @media (min-width:768px) {
+      margin-left:74px;
+    margin-right:74px;
+    }
+
+    @media (min-width:1200px) {
+      margin-left:32px;
+    margin-right:32px;
     }
   
     &__item{
@@ -23,12 +28,6 @@
     &__icon{
       display:inline-block;
       object-fit: cover;
-    }
-
-    &__list{
-     @media (min-width:480px){
-      text-align: center;
-     }
     }
     
     &__link{
