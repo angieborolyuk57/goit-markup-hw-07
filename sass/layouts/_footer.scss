@@ -4,21 +4,40 @@
 .footer {
     padding-top:60px;
     padding-bottom:60px;
+    padding-left: 15px;
+    padding-right: 15px;
   
     background-color: var( --second-background);
 
     &__container {
-      display:flex;
+  max-height:604px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top:60px;
+    padding-bottom:60px;
+    padding-left: 15px;
+    padding-right: 15px;
 
+  @media screen and (min-width:768px){
+    height:464px;
   }
 
+  @media screen and (min-width:1200px){
+    flex-direction: row;
+    height:auto;
+  }
+
+  }
     &__contacts{
-      display:flex;
-      flex-direction:column;
-  
+
       font-style: normal;
       font-size: 14px;
       line-height:1.71;
+
+      display:flex;
+      flex-direction:column;
     }
 
     &__studio{
@@ -26,14 +45,17 @@
     }
 
     &__logo{
-      display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
     
       padding:0px;
       margin-bottom: 28px;
     }
 
     &__address {
-      margin-bottom:10px;
+      margin-top:28px;
+    margin-bottom:10px;
     color:var(--primary-white);
     }
     
@@ -43,8 +65,13 @@
     
     &__email,
     &__tel {
+      text-align: center;
       color: rgba(255, 255, 255, 0.6);
       text-decoration:none;
+
+      @media (min-width:1200px){
+        text-align:left;
+      }
     } 
 
   .container{
@@ -58,9 +85,17 @@
   .socials-footer{
     width: 206px;
     height: 80px;
-    margin-left:70px;
-    margin-top:12px;
-    margin-bottom:72px;
+    margin-top:20px;
+    margin-bottom:60px;
+    text-align: center;
+
+
+    @media screen and (min-width:1200px){
+      margin-left:70px;
+      margin-top:12px;
+      margin-bottom:72px;   
+      text-align: lef;
+    }
 
     &__headline{
       display:inline-block;
@@ -73,6 +108,7 @@
        line-height: 100%;
       text-transform:uppercase;
       color:var(--primary-white);
+
     }
     
     &__list{
@@ -97,8 +133,7 @@
     
       transition-property: fill, background-color, border-radius;
       transition-duration:250ms;
-      transition-timing-function: var(--timing-function);
-    
+      transition-timing-function: var(--timing-function);   
     }
 
     &__link:hover,
@@ -109,9 +144,11 @@
     background-color: var(--accent-color);  
     border-radius: 50%;
   }
-
   }
   
+
+  
+
 
   
  
