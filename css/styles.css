@@ -96,6 +96,29 @@ body {
   }
 }
 
+.mobile-contacts{
+  display:flex;
+  flex-direction: column;
+}
+
+.mobile-contacts__tel{
+text-decoration: none;
+font-size: 34px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+color:var(--accent-color);
+   }
+
+ .mobile-contacts__email{
+      text-decoration: none;
+      font-size: 24px;
+     line-height: 1.16;
+     letter-spacing: 0.02em;
+     color:var(--main-text-color);
+   }
+
+  
+
 /* Auth-nav links */
 .auth-nav {
   display: none;
