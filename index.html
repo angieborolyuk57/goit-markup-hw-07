@@ -7,10 +7,10 @@
     <title lang="uk">Студія</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="stylesheet" href="./sass/styles.css"> 
     
 </head>
-<body> 
+<body>
     <!--Page navigation-->
    <header class="header"> 
        <div class="container header__main-nav"> 
@@ -38,7 +38,7 @@
     <div class="mobile-menu js-menu-container">
       <div class="mobile-menu__container">
         <button class="mobile-menu__close js-close-menu" type="button">
-          <svg class="icon-close" width="18" height="18">
+          <svg class="icon-close" width="19" height="19">
             <use href="./images/sprite.svg#icon-close">
             </use>
           </svg>
@@ -53,10 +53,10 @@
        <a class="mobile-contacts__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
       </div>
        <ul class="mobile-menu__socials list">
-        <li>Instagram</li> <span>┃</span>
-        <li>Facebook</li><span>┃</span>
-        <li>Twitter</li><span>┃</span>
-        <li>LinkedIn</li>
+        <li class="mobile-menu__media">Instagram</li> 
+        <li class="mobile-menu__media">Facebook</li>
+        <li class="mobile-menu__media">Twitter</li>
+        <li class="mobile-menu__media">LinkedIn</li>
        </ul>
       </div> 
     </div>
@@ -412,7 +412,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="btn__close btn-icon" data-modal-close>
+        <button type="button" class="btn__close " data-modal-close>
           <svg class="icon-close" width="18" height="18">
           <use href="./images/sprite.svg#icon-close">
           </use>
