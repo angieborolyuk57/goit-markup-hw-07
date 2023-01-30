@@ -1269,6 +1269,20 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--primary-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Form */
