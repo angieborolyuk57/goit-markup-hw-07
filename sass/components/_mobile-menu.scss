@@ -1,5 +1,5 @@
 .mobile-menu{
-    padding:48px 38px 40px;
+    padding:48px 40px;
     position:fixed;
     top:0;
     left:0;
@@ -8,21 +8,18 @@
     transform: translateX(100%);
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1);
     overflow-y:hidden;
-
     width:100%;
     height:100%;
-    width:480px;
 
     &__container{
-        position:relative;
+        text-align: left;
     }
 
     &__list{
-        margin-bottom:30px;
-
         display: flex;
         flex-direction: column;
         gap:32px;
+        margin-bottom:200px;
     }
 
     &__link{
@@ -40,36 +37,47 @@ text-decoration: none;
      }
 
      &__socials{
-        display:flex;
-        border: 1px solid #21212133;
-    
-
-     font-size:18px;
-     line-height: 1.22;
-     letter-spacing: 0.02em;
-     color: var(--accent-color);
-     margin-top: 64px
+display:flex;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: var(--accent-color);
      }
 
      &__media{
+        padding-left:10px;
+        padding-right:10px;
+     }
 
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color:#21212133;
+     &__media:first-child{
+        padding-left:0;
+     }
+     &__media:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
      }
 
      &__close{
-       position: absolute;
-       top:10px;
-       right:10px;
-       transform: translateY(-50%);
-       display:flex;
-       border:none;
-        background-color: var(--primary-white);
+ position: absolute;
+  top: 21px;
+  right: 25px;
+  color:var( --headline-color);
+
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
      }
 }
-
-
 
 
 .mobile-menu.is-open{
@@ -86,7 +94,8 @@ font-size: 34px;
 line-height: 1.17;
 letter-spacing: 0.02em;
 color:var(--accent-color);
-margin-top:306px;
+
+margin-bottom:32px;
      }
 
      &__email{
@@ -96,7 +105,28 @@ margin-top:306px;
        letter-spacing: 0.02em;
        color:var(--main-text-color);
 
-       margin-top:32px;
+       margin-bottom:64px;
      }
 
     }
+
+    .mobile-contacts{
+        display:flex;
+        flex-direction: column;
+      }
+      
+      .mobile-contacts__tel{
+      text-decoration: none;
+      font-size: 34px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color:var(--accent-color);
+         }
+      
+       .mobile-contacts__email{
+            text-decoration: none;
+            font-size: 24px;
+           line-height: 1.16;
+           letter-spacing: 0.02em;
+           color:var(--main-text-color);
+         }
