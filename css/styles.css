@@ -561,9 +561,15 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 10px;
   color: var(--headline-color);
+}
+@media (min-width: 768px) {
+  .feature__title {
+    text-align: left;
+  }
 }
 .feature__text {
   margin-top: 0px;
@@ -694,7 +700,7 @@ body {
 }
 .team-members__image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 @media (min-width: 768px) {
@@ -887,9 +893,15 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 10px;
   color: var(--headline-color);
+}
+@media (min-width: 768px) {
+  .feature__title {
+    text-align: left;
+  }
 }
 .feature__text {
   margin-top: 0px;
