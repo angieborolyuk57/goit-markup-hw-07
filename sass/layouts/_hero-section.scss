@@ -4,12 +4,17 @@
   }
 
   .hero{
-    padding-top:200px;
-    padding-bottom:210px;
+    padding-top:118px;
+    padding-bottom:118px;
     margin-top:0px;
     margin-bottom:0px;
     text-align: center;
     justify-content: center;
+
+    @media (min-width:1200px){
+      padding-top:200px;
+      padding-bottom:210px;
+    }
 
     &__overlay{
      
@@ -75,18 +80,18 @@ line-height: 1.62;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-      
-      
-      color: var(--primary-white);
+color: var(--primary-white);
+
+      @media(min-width:768px){
+       margin-left:204px;
+       margin-right:204px;
+      }
 
       @media (min-width:1200px){
         width:696px;
         font-size: 44px;
          line-height:1.36;
-      }
+         margin-left:auto;
+      margin-right:auto;
       }
     }
-
-
-
-    
