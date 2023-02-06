@@ -406,9 +406,11 @@ body {
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform cubic-bezier(0.075, 0.82, 0.165, 1);
   overflow-y: hidden;
   height: 100%;
+  width: 100%;
 }
 .mobile-menu__container {
   text-align: left;
+  height: 100%;
 }
 .mobile-menu__list {
   display: -webkit-box;
@@ -419,6 +421,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  margin: auto 0;
   margin-bottom: 200px;
 }
 .mobile-menu__link {

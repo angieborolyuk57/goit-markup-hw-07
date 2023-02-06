@@ -1,4 +1,5 @@
 .mobile-menu{
+
     padding:48px 40px;
     position:fixed;
     top:0;
@@ -9,16 +10,19 @@
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1);
     overflow-y:hidden;
     height:100%;
-    
+    width:100%;
 
     &__container{
         text-align: left;
-    }
+    
+    height:100%;
+}
 
     &__list{
         display: flex;
         flex-direction: column;
         gap:32px;
+        margin:auto 0;
         margin-bottom:200px;
     }
 
