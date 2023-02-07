@@ -629,6 +629,11 @@ body.is-open {
     margin-right: 30px;
   }
 }
+@media (min-width: 768px) {
+  .feature__item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+  }
+}
 .feature__title {
   font-size: 14px;
   line-height: 1.14;
@@ -708,8 +713,8 @@ body.is-open {
 }
 .activity__overlay-text {
   margin: 0;
+  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -966,6 +971,11 @@ body.is-open {
 @media (min-width: 1200px) {
   .feature__item:not(:last-child) {
     margin-right: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .feature__item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
   }
 }
 .feature__title {
