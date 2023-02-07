@@ -36,13 +36,13 @@
     
       &__overlay-text{
         margin:0;
-      font-style:bold;
+      font-style: normal;
+      font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
       text-align: center;
       text-transform: uppercase;
       color:var(--primary-white);
-      
       }
 
     }

@@ -330,6 +330,17 @@ body.is-open {
     background-image: url(../images/header-480px@2x-min.png);
   }
 }
+@media (min-width: 480px) {
+  .hero__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Header-480px-min.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header-480px-min.png);
+  }
+}
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 192dpi), (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url(/images/header-480px@2x-min.png);
+  }
+}
 @media (min-width: 768px) {
   .hero__overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-768px-min.png);
@@ -654,6 +665,12 @@ body.is-open {
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  .table .astronaut {
+    margin-bottom: 0px;
+  }
+}
+
 /* what we do */
 @media (max-width: 1199px) {
   .activity {
@@ -691,7 +708,8 @@ body.is-open {
 }
 .activity__overlay-text {
   margin: 0;
-  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -984,6 +1002,12 @@ body.is-open {
   height: 120px;
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .table .astronaut {
+    margin-bottom: 0px;
+  }
 }
 
 /* Footer design */
