@@ -40,12 +40,12 @@
               rgba(47, 48, 58, 0.4),
                rgba(47, 48, 58, 0.4)),
                
-             url(/images/Header-480px-min.png);
+             url(../images/Header-480px-min.png);
 
              @media (min-device-pixel-ratio: 2),
              (min-resolution: 192dpi),
              (min-resolution: 2dppx) {
-               background-image: url(/images/header-480px@2x-min.png);
+               background-image: url(../images/header-480px@2x-min.png);
              }
   }
 
